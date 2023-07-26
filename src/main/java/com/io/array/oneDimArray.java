@@ -2,11 +2,14 @@ package com.io.array;
 
 public class oneDimArray {
 	public static void main(String[] args) {
-		int a[] = { 1, 4, 6, 4, 6, 1 };
-		for (int x : a) {
-			System.out.print(" " + x);
+		String a[] = { "seshu", "seshu", "seshu", "seshu", "babu", "karanam" };
+		for (String x : a) {
+			if (x.contains("seshu")) {
+				System.out.println("duplicates string" + x);
+			} else {
+				System.out.println("not duplicate string" + x);
+			}
 		}
-		System.out.println();
 
 	}
 }
