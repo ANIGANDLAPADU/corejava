@@ -1,8 +1,8 @@
 package com.io.array;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.List;
+import java.util.Scanner;
 
 public class removeduplicatesfromarray {
 
@@ -16,8 +16,9 @@ public class removeduplicatesfromarray {
 		 * LinkedHashSet(); for (String Str : str) { set.add(Str); }
 		 * System.out.println(set);
 		 */
-		String str = "karanam seshu babu";
-		String str1 = "karanam seshu babu";
+		/*
+		 * String str = "karanam seshu babu"; String str1 = "karanam seshu babu";
+		 */
 		/*
 		 * StringBuffer sb = new StringBuffer(); Set<Character> set = new
 		 * LinkedHashSet(); for (int i = 0; i < str.length(); i++) {
@@ -46,24 +47,52 @@ public class removeduplicatesfromarray {
 		 * } for (Character se : set) { sb2.append(se); } System.out.println(sb2);
 		 */
 
-		int str2[] = { 100, 100, 100, 10 };
-		for (int i = 0; i < str2.length; i++) {
-			for (int j = i + 1; j < str2.length; j++) {
-				if (str2[i] == str2[j]) {
-					System.out.println(str2[j]);
+		/*
+		 * int str2[] = { 100, 100, 100, 10 }; for (int i = 0; i < str2.length; i++) {
+		 * for (int j = i + 1; j < str2.length; j++) { if (str2[i] == str2[j]) {
+		 * System.out.println(str2[j]); } } }
+		 * 
+		 * String str3[] = { "seshu", "seshu", "babu" }; for (int i = 0; i <
+		 * str3.length; i++) { for (int j = i + 1; j < str3.length; j++) { if (str3[i]
+		 * == str3[j]) { System.out.println(str3[j]); } }
+		 */
+
+		String str = "seshubabu";
+		int length = str.length();
+		char ch[] = str.toCharArray();
+		for (int i = 0; i < length; i++) {
+			for (int j = i + 1; j < length; j++) {
+				if (ch[i] == ch[j]) {
+					System.out.println(ch[j]);
+					break;
 				}
+
 			}
 		}
 
-		String str3[] = { "seshu", "seshu", "babu" };
-		for (int i = 0; i < str3.length; i++) {
-			for (int j = i + 1; j < str3.length; j++) {
-				if (str3[i] == str3[j]) {
-					System.out.println(str3[j]);
-				}
-			}
-
-		}
+		/*
+		 * Scanner sc = new Scanner(System.in); int orginal = sc.nextInt();
+		 * System.out.println("Enter a Number" + orginal); StringBuilder sb = new
+		 * StringBuilder(String.valueOf(orginal)); StringBuilder rever = sb.reverse();
+		 * int reverse = Integer.parseInt(rever.toString()); if (orginal == reverse) {
+		 * System.out.println("Given number is palindrome"); } else {
+		 * System.out.println("Given number is not palindrome"); }
+		 */
+		/*
+		 * String reverse = "";
+		 * 
+		 * 
+		 * Scanner sc = new Scanner(System.in); StringBuilder sb = new StringBuilder();
+		 * List<Character> list = new ArrayList(); String origin = sc.next(); String
+		 * original = origin; System.out.println("Enter a String"); for (int i = 0; i <
+		 * original.length(); i++) { list.add(original.charAt(i)); } for (Character se :
+		 * list) { sb.append(se); sb.append(reverse); }
+		 * 
+		 * if (original.equals(reverse)) {
+		 * System.out.println("Given String is palindrome"); } else {
+		 * System.out.println("Given String is not palindrome"); }
+		 */
 
 	}
+
 }
