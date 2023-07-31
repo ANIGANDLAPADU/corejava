@@ -1,4 +1,4 @@
-package com.io.array;
+package Corejavaprogams;
 
 public class twodimArray {
 	public static void main(String[] args) {

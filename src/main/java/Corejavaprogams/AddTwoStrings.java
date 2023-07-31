@@ -1,4 +1,4 @@
-package com.io.array;
+package Corejavaprogams;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -21,7 +21,7 @@ public class AddTwoStrings {
 		for (Character Str : set) {
 			stringbuilder.append(Str);
 		}
-		System.out.println(stringbuilder);
+		System.out.println(stringbuilder.reverse());
 
 	}
 
