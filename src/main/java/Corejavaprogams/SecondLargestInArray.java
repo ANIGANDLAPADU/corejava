@@ -10,6 +10,6 @@ public class SecondLargestInArray {
 
 	public static void main(String args[]) {
 		int a[] = { 1, 2, 5, 6, 3, 2 };
-		System.out.println("Second Largest: " + getLargestNumber(a,4));
+		System.out.println("Second Largest: " + getLargestNumber(a,6));
 	}
 }

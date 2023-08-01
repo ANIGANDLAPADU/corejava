@@ -6,6 +6,8 @@ import java.util.List;
 public class ReverseString {
 
 	public static void main(String[] args) {
+		// first approch
+
 		String str = "Seshu babu";
 		StringBuffer sb = new StringBuffer();
 		List<Character> list = new ArrayList();
@@ -18,6 +20,12 @@ public class ReverseString {
 		}
 		System.out.println(sb.reverse());
 
+		// second approch
+		String str4 = "seshu babu";
+		StringBuffer sb1 = new StringBuffer();
+		String str5 = sb1.append(str4).reverse().toString();
+		System.out.println("before reverse a string " + str4);
+		System.out.println("after reverse a String " + str5);
 	}
 
 }
