@@ -3,7 +3,7 @@ package Corejavaprogams;
 public class countoddeven {
 
 	public static void main(String[] args) {
-		int num = 1234;
+		int num = 1234; 
 		int even_count = 0;
 		int odd_count = 0;
 		while (num > 0) {
@@ -13,7 +13,7 @@ public class countoddeven {
 			} else {
 				odd_count++;
 			}
-			num = num % 10;
+			num = num / 10;
 
 		}
 		System.out.println("Even numbers" + even_count);
