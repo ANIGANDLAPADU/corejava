@@ -1,9 +1,13 @@
 package Corejavaprogams;
 
+import java.util.Scanner;
+
 public class CountSumofDigits {
 
 	public static void main(String[] args) {
-		int i = 1233445464;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter a Number:");
+		int i = sc.nextInt();
 		int sum = 0;
 		while (i > 0) {
 			int j = i%10;
