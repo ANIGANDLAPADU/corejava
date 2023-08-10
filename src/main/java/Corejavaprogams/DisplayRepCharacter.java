@@ -1,6 +1,6 @@
 package Corejavaprogams;
 
-public class CountOvels {
+public class DisplayRepCharacter {
 
 	public static void main(String[] args) {
 		String str = "seshu";

@@ -16,9 +16,9 @@ public class SeparateCharactersandnumbers {
 				splchars.append(ch);
 			}
 		}
-		System.out.println("chars" + chars);
-		System.out.println("numerics" + numerics);
-		System.out.println("splchars" + splchars);
+		System.out.println("chars    :" + chars);
+		System.out.println("numerics :" + numerics);
+		System.out.println("splchars :" + splchars);
 
 	}
 
