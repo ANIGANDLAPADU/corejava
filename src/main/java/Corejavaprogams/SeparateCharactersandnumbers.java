@@ -1,6 +1,6 @@
 package Corejavaprogams;
 
-public class SeparateCharacters {
+public class SeparateCharactersandnumbers {
 
 	public static void main(String[] args) {
 		String str = "121@#$!SESHU";
