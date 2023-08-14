@@ -1,17 +1,22 @@
 package corejavaprogamswithoutbulidmethods;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class revesre {
-	public static int third(int[] a, int length) {
-		Arrays.sort(a);
-		return a[length - 2];
-
+	public static void strverse(char[] ch,int length) {
+	System.out.println(ch[length-1]);
+	length--;
+	strverse(ch, length);
 	}
 
 	public static void main(String[] args) {
-		int[] a = { 10, 20, 30, 40 };
-		System.out.println(third(a, 4));
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a String  :");
+		String str = sc.next();
+		char[] ch = str.toCharArray();
+		int length=ch.length;
+		strverse(ch, length);
+
 	}
 
 }
