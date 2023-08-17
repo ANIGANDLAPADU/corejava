@@ -1,18 +1,18 @@
 package Corejava.collections;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class collectionlist {
 
 	public static void main(String[] args) {
-		List list = new ArrayList();
+		List<Object> list = new ArrayList<Object>();
 		list.add("seshu");
 		list.add("karanam");
 		list.add("babu");
 		list.add("seshu");
 		list.add("karanam");
 		list.add("babu");
+		list.add(123);
 		System.out.println(list);
 
 	}
