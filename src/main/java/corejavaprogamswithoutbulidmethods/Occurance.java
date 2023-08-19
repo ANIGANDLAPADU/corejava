@@ -1,25 +1,19 @@
 package corejavaprogamswithoutbulidmethods;
-
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
 public class Occurance {
 	public static void main(String[] args) {
-		String str = "seshu babu karanam";
-		char[] ch = str.toCharArray();
-		int length = ch.length;
-		Map<Character, Integer> map = new HashMap<Character, Integer>();
-		for (char c : ch) {
-			if (!ch.equals(" ")) {
-
-				if (map.containsKey(c)) {
-					map.put(c, map.get(c) + 1);
-				} else {
-					map.put(c, 1);
-				}
-			}
-		}
-		System.out.println(map);
-
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter a Number :");
+		int i = sc.nextInt();
+		/*
+		 * while (i > 0) { int j = i % 10; System.out.print(j); i = i / 10; }
+		 */
+		/*
+		 * StringBuffer sb = new StringBuffer(String.valueOf(i)); int j =
+		 * Integer.parseInt(sb.reverse().toString()); System.out.print(j);
+		 */
+		StringBuilder sb = new StringBuilder(String.valueOf(i));
+		int j = Integer.parseInt(sb.reverse().toString());
+		System.out.println(j);
 	}
 }

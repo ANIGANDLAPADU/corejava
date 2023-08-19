@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface abc {
-	int i = 100;
+    int i = 100;
 	int j = 200;
 
 	default void hello() {
