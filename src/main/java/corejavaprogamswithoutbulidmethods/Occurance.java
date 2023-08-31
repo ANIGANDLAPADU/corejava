@@ -1,19 +1,29 @@
 package corejavaprogamswithoutbulidmethods;
-import java.util.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
 public class Occurance {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Please Enter a Number :");
-		int i = sc.nextInt();
-		/*
-		 * while (i > 0) { int j = i % 10; System.out.print(j); i = i / 10; }
-		 */
-		/*
-		 * StringBuffer sb = new StringBuffer(String.valueOf(i)); int j =
-		 * Integer.parseInt(sb.reverse().toString()); System.out.print(j);
-		 */
-		StringBuilder sb = new StringBuilder(String.valueOf(i));
-		int j = Integer.parseInt(sb.reverse().toString());
-		System.out.println(j);
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://testautomationpractice.blogspot.com/");
+		Actions act = new Actions(driver);
+		WebElement hold = driver.findElement(By.xpath("//p[normalize-space()='Drag me to my target']"));
+		WebElement rlr = driver.findElement(By.xpath("//div[@id='droppable']"));
+		act.dragAndDrop(hold, rlr).perform();
+		WebElement user = driver.findElement(By.xpath("//input[@id='name']"));
+		user.sendKeys("seshu");
+		act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
+		act.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).build().perform();
+		act.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
+		driver.switchTo().newWindow(WindowType.TAB);
+
 	}
 }

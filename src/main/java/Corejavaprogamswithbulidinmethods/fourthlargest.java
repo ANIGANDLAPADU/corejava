@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class fourthlargest {
 	public static int largest(int[] a, int total) {
 		Arrays.sort(a);
-		return a[total-1];
+		return a[total-4];
 
 	}
 
