@@ -15,7 +15,7 @@ public class Overridding extends seshu {
 	}
 
 	public static void main(String[] args) {
-		Overridding or =new Overridding();
+		Overridding or = new Overridding();
 		or.hello();
 
 	}

@@ -1,14 +1,21 @@
 package corejavaprogamswithoutbulidmethods;
 
-public class Occurance {
-	public static void main(String[] args) {
-		int i = 1, j = 1, k = 0;
-		while (k <= 50) {
-			k = i + j;
-			System.out.println(k);
-			i = j;
-			j = k;
+import java.util.Arrays;
 
+public class Occurance {
+
+	public static void main(String[] args) {
+		String str = "seshu";
+		String str1 = "babu";
+		char[] ch = str.toCharArray();
+		char[] ch1 = str1.toCharArray();
+		Arrays.sort(ch);
+		Arrays.sort(ch1);
+		if (Arrays.equals(ch, ch1)) {
+           System.out.println("given string anagram");
+		}else {
+			System.out.println();
 		}
+
 	}
 }
