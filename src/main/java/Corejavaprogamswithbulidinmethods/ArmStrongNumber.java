@@ -17,9 +17,9 @@ public class ArmStrongNumber {
 
 		}
 		if (temp == sum) {
-			System.out.println("Given number is armstrongnumber :");
+			System.out.println("Given number is Armstrongnumber :");
 		} else {
-			System.out.println("given number is not armstrongnumber :");
+			System.out.println("given number is not Armstrongnumber :");
 		}
 
 	}

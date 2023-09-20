@@ -7,9 +7,9 @@ public class Anargam {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a String ");
+		System.out.println("Enter a String :");
 		String s1 = sc.next();
-		System.out.println("Enter a String ");
+		System.out.println("Enter a String :");
 		String s2 = sc.next();
 		char c1[] = s1.toLowerCase().toCharArray();
 		char c2[] = s2.toLowerCase().toCharArray();
