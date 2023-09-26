@@ -3,7 +3,7 @@ package Corejavaprogamswithbulidinmethods;
 public class CountEvenOdd {
 
 	public static void main(String[] args) {
-		int number = 123456;
+		int number = 193456;
 		int even_count = 0;
 		int odd_count = 0;
 		while (number > 0) {
