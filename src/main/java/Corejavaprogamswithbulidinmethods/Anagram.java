@@ -3,7 +3,7 @@ package Corejavaprogamswithbulidinmethods;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Anargam {
+public class Anagram {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -17,9 +17,9 @@ public class Anargam {
 		Arrays.sort(c2);
 
 		if (Arrays.equals(c1, c2)) {
-			System.out.println("given Strings is Anaragam");
+			System.out.println("given Strings is Anagram");
 		} else {
-			System.out.println("Given Strings is not Anaragam");
+			System.out.println("Given Strings is not Anagram");
 		}
 
 	}
