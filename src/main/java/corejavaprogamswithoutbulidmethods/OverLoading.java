@@ -1,12 +1,12 @@
 package corejavaprogamswithoutbulidmethods;
 
 public class OverLoading {
-	void add() {
+	public void add() {
 
 		System.out.println("Hi");
 	}
 
-	void add(int d, int c) {
+	public void add(int d, int c) {
 		int e = d + c;
 		System.out.println(e);
 	}
@@ -15,7 +15,6 @@ public class OverLoading {
 		OverLoading ol = new OverLoading();
 		ol.add(10, 100);
 		ol.add();
-		
 
 	}
 
