@@ -3,21 +3,19 @@ package Corejavaprogamswithbulidinmethods;
 public class PrimeRange {
 
 	public static void main(String[] args) {
-		int sum=10;
-		int flag = 0;
-		for (int i = 1; i <= sum; i++) {
-			for (int j = 2; j < i; j++) {
+		int sum = 27;
+		for (int i = 2; i <= sum; i++) {
+			boolean isprime = true;
+			for (int j = 2; j <= i / 2; j++) {
 				if (i % j == 0) {
-					flag = 1;
+					isprime = false;
 					break;
 				}
 			}
-			if (flag == 0) {
-				System.out.print(i+"  ");
+			if (isprime) {
+				System.out.println(i);
 			}
-
 		}
-
 	}
 
 }
