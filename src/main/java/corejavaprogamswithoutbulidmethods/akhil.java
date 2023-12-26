@@ -1,7 +1,7 @@
 package corejavaprogamswithoutbulidmethods;
 
  abstract class srinivas {
-	public abstract int seshu();
+	public  abstract int seshu();
 
 	public abstract void babu();
 
@@ -9,7 +9,9 @@ package corejavaprogamswithoutbulidmethods;
 
 public class akhil extends srinivas {
 	public static void main(String[] args) {
-
+      akhil ak = new akhil();
+      ak.babu();
+      ak.seshu();
 	}
 
 	@Override
