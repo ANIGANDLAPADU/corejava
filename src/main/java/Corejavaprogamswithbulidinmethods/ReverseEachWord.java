@@ -18,7 +18,7 @@ public class ReverseEachWord {
 		System.out.println(ReverseString);
 		// Second approch reverese each word in given string using bulid-in methods
 		String str1 = "Hello Seshu Babu";
-		String[] ch1 = str.split(" ");
+		String[] ch1 = str.split("//s");
 		String ReverseString1 = "";
 		for (String c : ch) {
 			StringBuffer sb = new StringBuffer(c);
