@@ -4,7 +4,7 @@ public class seshu implements abc {
 
 	public static void main(String[] args) {
 		abc bc = new seshu();
-		bc.hello();
+		abc.hello();
 		bc.Hi();
 		abc.welcome();
 		System.out.println(i);
