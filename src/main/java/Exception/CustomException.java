@@ -1,10 +1,12 @@
 package Exception;
 
-public class CustomException extends Exception {
+public class CustomException {
 
 	public static void main(String[] args) {
-		CustomException custom = new CustomException();
-		
+		int i = 10;
+		int j = 0;
+		int k = i % j;
+        
 	}
 
 }
