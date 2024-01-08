@@ -31,8 +31,9 @@ public class StreamAPIFlatmap {
 		abc.add(array1);
 		abc.add(array2);
 		abc.add(array3);
-		abc.stream().flatMap(obj -> obj.stream()).map(o -> o.name.toUpperCase()).collect(Collectors.toList())
-				.forEach(System.out::println);
+		List<Integer> name = abc.stream().flatMap(obj -> obj.stream()).map(o -> o.marks)
+				.collect(Collectors.toList());
+		System.out.println(name);
 	}
 
 }

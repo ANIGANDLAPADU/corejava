@@ -1,16 +1,16 @@
 package interfaces;
 
-public interface abc {
-    int i = 100;
-	int j = 200;
+public abstract class abc {
+	 static int i = 100;
+	 static int j = 200;
 
 	public static void hello() {
 		System.out.println("Hello");
 	}
 
-	 public static  void welcome() {
+	public static void welcome() {
 		System.out.println("Welcome");
 	}
 
-	public void Hi();
+	public abstract void Hi();
 }

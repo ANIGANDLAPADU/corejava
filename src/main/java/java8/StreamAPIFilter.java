@@ -1,6 +1,7 @@
 package java8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StreamAPIFilter {
@@ -10,6 +11,5 @@ public class StreamAPIFilter {
 		list.add("seshu babu karanam");
 		list.stream().filter(li -> li.startsWith("se")).forEach(System.out::println);
 		list.stream().filter(li -> li.endsWith("am")).forEach(System.out::println);
-
 	}
 }
