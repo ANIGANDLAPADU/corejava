@@ -5,7 +5,7 @@ import java.util.Optional;
 public class OptionalClass {
 
 	public static void main(String[] args) {
-		String str = "seshu";
+		String str ="seshubabu";
 		/* using ofNullable() method */
 		Optional<String> optional = Optional.ofNullable(str);
 		if (optional.isPresent()) {
@@ -18,7 +18,7 @@ public class OptionalClass {
 		if (op.isPresent()) {
 			System.out.println("Value is :" + op.get());
 		} else {
-			System.out.println("value is not present :" + op.orElse("seshu"));
+			System.out.println("value is not present :" + op.orElse("karanam"));
 		}
 	}
 
