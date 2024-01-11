@@ -12,7 +12,7 @@ public class StreamAPImap {
 		list.add("karanam");
 		list.add("akhil");
 		list.add("veerakumari");
-        list.stream().filter(element->element.length()>=5).map(ele->ele.trim()).forEach(System.out::println);
+        list.stream().filter(element->element.length()>=5).map(ele->ele).forEach(System.out::println);
 	}
 
 }
