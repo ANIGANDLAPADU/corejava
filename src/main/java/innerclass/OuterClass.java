@@ -1,6 +1,6 @@
 package innerclass;
 
-public class OuterClass {
+public  class OuterClass {
 	private int i = 100;
 
 	public  void outer() {
