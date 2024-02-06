@@ -3,10 +3,7 @@ package Exception;
 interface exception {
 	public void seshu();
 
-	default void babu() {
-		System.out.println(this.getClass());
-
-	}
+	 void babu();
 }
 
 public class CustomException implements exception {
@@ -19,6 +16,12 @@ public class CustomException implements exception {
 	@Override
 	public void seshu() {
 
+	}
+
+	@Override
+	public void babu() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
