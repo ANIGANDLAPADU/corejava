@@ -1,19 +1,23 @@
 package Exception;
 
-public class Display {
-	public static void main(String[] args) {
-		String str = "seshubabu";
-		
-		char[] ch = str.toCharArray();
-		for (int i = 0; i < str.length(); i++) {
-			for (int j = i + 1; j < str.length(); j++) {
-				if (ch[i] == ch[j]) {
-					System.out.println(ch[i]);
-					break;
-				}
+class seshu {
+	seshu(int i) {
+		System.out.println(i);
+	}
 
-			}
-		}
+	seshu() {
+		System.out.println("seshu");
+	}
+}
+
+public class Display extends seshu {
+	Display() {
+        super(10);
+		System.out.println("Dispaly");
+	}
+
+	public static void main(String[] args) {
+		Display Display = new Display();
 	}
 
 }
