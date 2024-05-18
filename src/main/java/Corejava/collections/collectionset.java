@@ -1,8 +1,6 @@
 package Corejava.collections;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -17,6 +15,14 @@ public class collectionset {
 		set.add("karanam");
 		set.add("babu");
 		System.out.println(set);
+		Iterator ite = set.iterator();
+		String str = "karanam";
+		while (ite.hasNext()) {
+			ite.next();
+			if (set.contains(str)) {
+				ite.remove();
+			}
+		}
 	}
 
 }

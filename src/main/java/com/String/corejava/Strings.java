@@ -1,21 +1,31 @@
 package com.String.corejava;
 
-final class seshu {
-	final int i=100;
-	public final  void main() {
-      System.out.println("hello");
-      seshu seshu = new seshu();
-      seshu.main();
-	}
-}
+class Strings {
 
-class Strings  {
+	public static String reverseAlphabetic(String input) {
+		StringBuilder alphabetic = new StringBuilder();
+		for (char c : input.toCharArray()) {
+			if (Character.isLetter(c)) {
+				alphabetic.append(c);
+			}
+		}
+		alphabetic.reverse();
+		StringBuilder result = new StringBuilder();
+		int index = 0;
+		for (char c : input.toCharArray()) {
+			if (Character.isLetter(c)) {
+				result.append(alphabetic.charAt(index));
+				index++;
+			} else {
+				result.append(c);
+			}
+		}
+		return result.toString();
+	}
 
 	public static void main(String[] args) {
-		Strings strings = new Strings();
-		seshu seshu = new seshu();
-		seshu.main();
-		System.out.println(seshu.i);
-		
+		String input = "test1234epam6789";
+		String reversed = reverseAlphabetic(input);
+		System.out.println(reversed);
 	}
 }
