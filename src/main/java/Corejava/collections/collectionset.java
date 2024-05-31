@@ -7,22 +7,22 @@ import java.util.TreeSet;
 public class collectionset {
 
 	public static void main(String[] args) {
-		Set set = new TreeSet();
+		Set<String> set = new TreeSet<String>();
 		set.add("seshu");
 		set.add("karanam");
 		set.add("babu");
 		set.add("seshu");
 		set.add("karanam");
 		set.add("babu");
-		System.out.println(set);
-		Iterator ite = set.iterator();
+		Iterator<String> ite = set.iterator();
 		String str = "karanam";
 		while (ite.hasNext()) {
-			ite.next();
+			System.out.println(ite.next());
 			if (set.contains(str)) {
 				ite.remove();
 			}
 		}
+		
 	}
 
 }
