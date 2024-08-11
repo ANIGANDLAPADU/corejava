@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class FirstNonRepeatedCharacter {
 	public static Character firstNonRepeated(String str) {
 
-		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
+		HashMap<Character,Integer> hashMap = new HashMap<Character,Integer>();
 		for (char ch : str.toCharArray()) {
 
 			hashMap.put(ch, hashMap.getOrDefault(ch, 0) + 1);
