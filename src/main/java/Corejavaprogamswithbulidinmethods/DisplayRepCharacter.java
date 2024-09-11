@@ -1,5 +1,6 @@
 package Corejavaprogamswithbulidinmethods;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class DisplayRepCharacter {
@@ -9,16 +10,22 @@ public class DisplayRepCharacter {
 		System.out.println("Please Enter a String :");
 		String str = sc.next();
 		int length = str.length();
-		char[] ch = str.toCharArray();
-		for (int i = 0; i < length; i++) {
-			for (int j = i+1; j < length; j++) {
-				if (ch[i] == ch[j]) {
-					System.out.println(ch[j]);
-					break;
-				}
+		char[] str1 = str.toCharArray();
+		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
+		for (char s : str1) {
+			if (hashMap.containsKey(s)) {
+				hashMap.put(s, hashMap.get(s) + 1);
+			} else {
+				hashMap.put(s, 1);
 			}
-
 		}
+	   for(char s:hashMap.keySet()) {
+		   if(hashMap.get(s)>1) {
+			   System.out.println(s);
+		   }
+	   }
+
+	
 
 	}
 }
