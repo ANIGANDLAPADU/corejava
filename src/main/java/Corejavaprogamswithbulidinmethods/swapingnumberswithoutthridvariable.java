@@ -6,7 +6,7 @@ public class swapingnumberswithoutthridvariable {
 		int i = 10, j = 20;
 		i = i + j;
 		j = i - j;
-		i = j - i;
+		i = i - j;
 		System.out.println(i);
 		System.out.println(j);
 	}
